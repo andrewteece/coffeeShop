@@ -45,7 +45,7 @@ export default function Navbar() {
             <CoffeeIcon />
             <Typography
               variant='h5'
-              sx={{ flexGrow: 1, fontFamily: '"Eagle Lake", serif' }}
+              sx={{ flexGrow: 1, fontFamily: '"Eagle Lake", serif', pl: 1.5 }}
             >
               Coffee Shop
             </Typography>
