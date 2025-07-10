@@ -1,7 +1,9 @@
+import '@fontsource/roboto';
 import './App.css';
+import Navbar from './components/layout/Navbar';
 
 function App() {
-  return <h1>Coffee Shop</h1>;
+  return <Navbar />;
 }
 
 export default App;
