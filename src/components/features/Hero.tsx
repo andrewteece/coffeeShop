@@ -70,11 +70,18 @@ export default function Hero() {
             textAlign: 'center',
           }}
         >
-          <img
+          <motion.img
             src={Espresso}
             alt='espresso coffee drink'
             loading='lazy'
-            style={{ width: '100%' }}
+            style={{
+              width: '100%',
+              borderRadius: '1rem',
+              boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
+            }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.8, duration: 0.6 }}
           />
         </Box>
       </Stack>
