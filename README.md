@@ -27,7 +27,7 @@
 ### Links
 
 - Code URL: [https://github.com/andrewteece/coffeeShop](https://github.com/andrewteece/coffeeShop)
-- Live Site URL: [https://adorable-tulumba-ffa30e.netlify.app/](https://adorable-tulumba-ffa30e.netlify.app/)
+- Live Site URL: [https://coffee-shop-5k1rtk0qk-andrewteeces-projects.vercel.app/](https://coffee-shop-5k1rtk0qk-andrewteeces-projects.vercel.app/)
 
 ### Built with
 
