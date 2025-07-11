@@ -1,6 +1,5 @@
 import products from '../../assets/coffee';
 import {
-  Container,
   Card,
   CardActions,
   CardContent,
@@ -11,6 +10,14 @@ import {
 } from '@mui/material';
 import Grid from '@mui/material/Grid';
 
+type Product = {
+  id: number;
+  title: string;
+  image: string;
+  price: number;
+  description: string;
+};
+
 export default function Coffee() {
   return (
     <Box sx={{ my: 10 }} id='coffee'>
@@ -18,8 +25,8 @@ export default function Coffee() {
         Featured Coffees
       </Typography>
       <Grid container spacing={3} sx={{ padding: 3, justifyContent: 'center' }}>
-        {products.map((product) => (
-          <Grid key={product.id} item xs={12} sm={6} md={4}>
+        {products.map((product: Product) => (
+          <Grid key={product.id} xs={12} sm={6} md={4}>
             <Card
               sx={{
                 maxWidth: 345,
