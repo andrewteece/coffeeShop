@@ -49,12 +49,12 @@ export default function Coffee() {
                 <Typography variant='h6' color='primary' sx={{ marginY: 1 }}>
                   ${product.price.toFixed(2)}
                 </Typography>
-                <CardActions sx={{ justifyContent: 'center', mt: 1 }}>
-                  <Button variant='contained' color='secondary'>
-                    Buy Now
-                  </Button>
-                </CardActions>
               </CardContent>
+              <CardActions sx={{ justifyContent: 'center', mt: 1 }}>
+                <Button variant='contained' color='secondary'>
+                  Buy Now
+                </Button>
+              </CardActions>
             </Card>
           </Grid>
         ))}
