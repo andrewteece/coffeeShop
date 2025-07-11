@@ -9,6 +9,7 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Next Steps for Project](#next-steps-for-project)
 - [Author](#author)
 
 
@@ -33,6 +34,14 @@
 
 - React 19.1.0
 - Material UI 7.2.0
+
+### Next Steps for Project
+
+- Light/Dark mode
+- Fake Coffee API 
+- Add Cart system
+
+
 
 ## Author
 
