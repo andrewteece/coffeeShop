@@ -1,3 +1,5 @@
+import { randomPrice } from '../utils/price';
+
 export type Product = {
   id: string;
   title: string;
@@ -17,6 +19,6 @@ export async function fetchCoffees(): Promise<Product[]> {
     description: r.description,
     image: r.image,
     ingredients: r.ingredients,
-    price: Math.random() * 5 + 2, // replace with your randomPrice logic
+    price: randomPrice(),
   }));
 }
