@@ -29,12 +29,12 @@ export default function Coffee() {
 
         <Grid
           container
-          component='div'
+          // component='div'
           spacing={3}
           sx={{ p: 3, justifyContent: 'center' }}
         >
           {products.map((product: Product) => (
-            <Grid key={product.id} item component='div' xs={12} sm={6} md={4}>
+            <Grid key={product.id} xs={12} sm={6} md={4}>
               <Card
                 sx={{
                   maxWidth: 345,
