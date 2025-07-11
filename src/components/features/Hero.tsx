@@ -12,13 +12,13 @@ export default function Hero() {
           width: '100%',
           justifyContent: 'center',
           alignItems: 'center',
-          minHeight: '85vh',
+          // minHeight: { xs: 'auto', md: '85vh' },
+          py: { xs: 4, md: 6 },
         }}
       >
         <Box
           sx={{
             width: { xs: '100%', md: '50%' }, // Ensure this Box takes 50% of the width
-            py: 6,
             textAlign: 'center',
             display: 'flex',
             flexDirection: 'column',
@@ -33,6 +33,7 @@ export default function Hero() {
           >
             <Typography
               variant='h1'
+              component='h1'
               sx={{ fontSize: { xs: '3rem', md: '4rem' } }}
             >
               Coffee For All
@@ -65,8 +66,8 @@ export default function Hero() {
 
         <Box
           sx={{
-            width: '50%', // Ensure this Box takes 50% of the width
-            padding: 2,
+            width: { xs: '100%', md: '50%' }, // Ensure this Box takes 50% of the width
+            p: { xs: 1, md: 2 },
             textAlign: 'center',
           }}
         >
