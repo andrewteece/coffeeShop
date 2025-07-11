@@ -8,8 +8,8 @@ import {
   Button,
   Typography,
   Box,
+  Grid,
 } from '@mui/material';
-import Grid from '@mui/material/Grid';
 
 type Product = {
   id: number;
@@ -27,14 +27,9 @@ export default function Coffee() {
           Featured Coffees
         </Typography>
 
-        <Grid
-          container
-          component='div'
-          spacing={3}
-          sx={{ p: 3, justifyContent: 'center' }}
-        >
+        <Grid container spacing={3} sx={{ p: 3, justifyContent: 'center' }}>
           {products.map((product: Product) => (
-            <Grid key={product.id} component='div' xs={12} sm={6} md={4}>
+            <Grid key={product.id} size={{ xs: 12, sm: 6, md: 4 }}>
               <Card
                 sx={{
                   maxWidth: 345,
