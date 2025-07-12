@@ -11,7 +11,8 @@ import Hero from './components/features/Hero';
 import Coffee from './components/features/Coffee';
 
 function AppContent() {
-  const { mode, setMode } = useColorScheme();
+  const { mode, setMode, systemMode } = useColorScheme();
+  const effectiveMode = mode === 'system' ? systemMode : mode;
 
   return (
     <>
@@ -21,8 +22,9 @@ function AppContent() {
         color='inherit'
         sx={{ position: 'fixed', top: 16, right: 16 }}
       >
-        {mode === 'light' ? <DarkModeIcon /> : <LightModeIcon />}
+        {effectiveMode === 'light' ? <DarkModeIcon /> : <LightModeIcon />}
       </IconButton>
+
       <Navbar />
       <Hero />
       <Coffee />

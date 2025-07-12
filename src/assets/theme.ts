@@ -1,6 +1,9 @@
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
+  cssVariables: {
+    colorSchemeSelector: 'class',
+  },
   colorSchemes: {
     light: {
       palette: {
@@ -18,6 +21,13 @@ const theme = createTheme({
           default: '#121212',
           paper: '#1d1d1d',
         },
+      },
+    },
+  },
+  components: {
+    MuiSvgIcon: {
+      defaultProps: {
+        htmlColor: 'currentColor', // ensures icons inherit text color :contentReference[oaicite:2]{index=2}
       },
     },
   },

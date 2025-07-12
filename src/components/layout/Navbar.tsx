@@ -41,8 +41,8 @@ export default function Navbar() {
     <>
       <AppBar position='sticky' color='primary'>
         <Container>
-          <Toolbar>
-            <CoffeeIcon />
+          <Toolbar sx={{ color: 'inherit' }}>
+            <CoffeeIcon sx={{ mr: 1 }} />
             <Typography
               variant='h5'
               sx={{ flexGrow: 1, fontFamily: '"Eagle Lake", serif', pl: 1.5 }}
